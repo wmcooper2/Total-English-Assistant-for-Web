@@ -1,6 +1,13 @@
-form {
-  width: 50%;
-  height: auto;
+/*
+div {
+  border: 1px solid black;
+}
+*/
+
+.dictionary {
+  position: absolute;
+  left: 350px;
+  top: 50px;
 }
 
 .searchDiv {
@@ -10,4 +17,16 @@ form {
 .searchBar {
   display: flex;
   justify-content: space-between;
+}
+
+.results {
+  margin-top: 10px;
+}
+
+.resultItem {
+  width: 50%;
+}
+
+.controls {
+  margin-top: 10px;
 }
