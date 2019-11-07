@@ -1,3 +1,4 @@
+const Dictionary =
 {
     "AIDS": {
         "examples": "",
@@ -11842,3 +11843,5 @@
         "part of speech": "noun"
     }
 }
+
+export default Dictionary;

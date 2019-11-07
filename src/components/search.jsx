@@ -20,10 +20,13 @@ class Search extends Component {
               type="text"
               className="form-control"
               placeholder="English・日本語"
+              onChange={event => {
+                this.props.props.handleInput(event.target.value);
+              }}
             />
           </div>
           <GradeBtns
-            onClick={this.props.onClick}
+            props={this.props}
             classes="gradeBtn btn btn-primary form-control"
           />{" "}
         </div>
