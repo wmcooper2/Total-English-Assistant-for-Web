@@ -6,6 +6,7 @@ div {
 
 .dictionary {
   position: absolute;
+  width: 500px;
   left: 350px;
   top: 50px;
 }
@@ -20,13 +21,5 @@ div {
 }
 
 .results {
-  margin-top: 10px;
-}
-
-.resultItem {
-  width: 50%;
-}
-
-.controls {
   margin-top: 10px;
 }

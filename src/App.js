@@ -1,18 +1,32 @@
 import React from "react";
 import "./App.css";
-import Controls from "./components/controls";
 import Results from "./components/results";
 import Search from "./components/search";
 import "bootstrap/dist/css/bootstrap.css";
 
-function App() {
-  return (
-    <div className="container dictionary">
-      <Search />
-      <Results />
-      <Controls />
-    </div>
-  );
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      buttons: [1, 2, 3]
+    };
+  }
+
+  handleClick = props => {
+    console.log(props);
+  };
+
+  render() {
+    console.log(this.state);
+    return (
+      <div className="dictionary">
+        <form className="form-group">
+          <Search onClick={this.handleClick} />
+          <Results />
+        </form>
+      </div>
+    );
+  }
 }
 
 export default App;
