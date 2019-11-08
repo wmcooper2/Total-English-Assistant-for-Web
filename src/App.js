@@ -10,15 +10,32 @@ class App extends React.Component {
     super(props);
     this.state = {
       buttons: [1, 2, 3],
+      buttons2: [
+        {
+          grade: 1,
+          backgroundColor: "#00BD80",
+          toggled: false
+        },
+        {
+          grade: 2,
+          backgroundColor: "9D4399",
+          toggled: false
+        },
+        {
+          grade: 3,
+          backgroundColor: "E46900",
+          toggled: false
+        }
+      ],
       listItems: ["one", "two", "three"],
-      click: this.handleBtnClick,
+      gradeClick: this.handleGradeClick,
       handleInput: this.handleInput,
       searchWord: "",
       results: []
     };
   }
 
-  handleBtnClick = props => {
+  handleGradeClick = props => {
     alert(props);
   };
 

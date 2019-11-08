@@ -1,38 +1,39 @@
-import React, { Component } from "react";
+import React from "react";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "bootstrap/dist/css/bootstrap.css";
 import "font-awesome/css/font-awesome.min.css";
-import GradeBtns from "./buttonGroup";
+import GradeBtns from "./gradeBtns";
 
-class Search extends Component {
-  render() {
-    return (
-      <React.Fragment>
-        <div className="form-row" action="">
-          <div className="input-group col-md-8">
-            <div className="input-group-prepend">
-              <button className="btn btn-primary" disabled>
-                <FontAwesomeIcon icon={faSearch} />
-              </button>
-            </div>
-            <input
-              type="text"
-              className="form-control"
-              placeholder="English・日本語"
-              onChange={event => {
-                this.props.props.handleInput(event.target.value);
-              }}
-            />
+const Search = props => {
+  const { gradeClick, handleInput, buttons, classes } = props.props;
+
+  return (
+    <React.Fragment>
+      <div className="form-row" action="">
+        <div className="input-group col-md-8">
+          <div className="input-group-prepend">
+            <button className="btn btn-primary" disabled>
+              <FontAwesomeIcon icon={faSearch} />
+            </button>
           </div>
-          <GradeBtns
-            props={this.props}
-            classes="gradeBtn btn btn-primary form-control"
-          />{" "}
+          <input
+            type="text"
+            className="form-control"
+            placeholder="English・日本語"
+            onChange={event => {
+              handleInput(event.target.value);
+            }}
+          />
         </div>
-      </React.Fragment>
-    );
-  }
-}
+        <GradeBtns
+          buttons={buttons}
+          gradeClick={gradeClick}
+          classes="gradeBtn btn btn-primary form-control"
+        />{" "}
+      </div>
+    </React.Fragment>
+  );
+};
 
 export default Search;
