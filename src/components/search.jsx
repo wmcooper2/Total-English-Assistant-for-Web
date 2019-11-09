@@ -6,7 +6,7 @@ import "font-awesome/css/font-awesome.min.css";
 import GradeBtns from "./gradeBtns";
 
 const Search = props => {
-  const { gradeClick, handleInput, buttons, classes } = props.props;
+  const { gradeClick, handleInput, buttons } = props.props;
 
   return (
     <React.Fragment>
@@ -26,11 +26,7 @@ const Search = props => {
             }}
           />
         </div>
-        <GradeBtns
-          buttons={buttons}
-          gradeClick={gradeClick}
-          classes="gradeBtn btn btn-primary form-control"
-        />{" "}
+        <GradeBtns buttons={buttons} handleClick={gradeClick} />{" "}
       </div>
     </React.Fragment>
   );

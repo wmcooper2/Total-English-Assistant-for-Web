@@ -1,37 +1,37 @@
 import React from "react";
 
 const GradeBtn = props => {
-  const { gradeClick, btnID, className, text } = props;
+  const { handleClick, btnID, text } = props;
+  /*const gradeColor = "grade" + btnID + "Color";*/
   return (
-    <button
-      className={className}
+    <div
+      className={"btn btn-primary"}
       onClick={event => {
-        gradeClick(event.target.id);
+        handleClick(event.target.id);
       }}
-      id={"grade" + btnID}
+      id={btnID}
     >
       {text}
-    </button>
+    </div>
   );
 };
 
 const GradeBtns = props => {
-  const { buttons, classes, gradeClick } = props;
-
+  const { buttons, handleClick } = props;
   let grades = [];
-  for (let btn of buttons) {
+  for (let btn in buttons) {
+    let grade = buttons[btn].grade;
     grades.push(
       <GradeBtn
-        btnID={btn}
-        className={classes}
-        text={btn}
-        key={btn}
-        gradeClick={gradeClick}
+        btnID={grade}
+        text={grade}
+        key={grade}
+        handleClick={handleClick}
       />
     );
   }
 
-  return <div className="gradeBtnGroup btn-group col-md-4">{grades}</div>;
+  return <div className="btn-group col-md-4">{grades}</div>;
 };
 
 export default GradeBtns;

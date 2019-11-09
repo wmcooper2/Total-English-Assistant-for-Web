@@ -23,3 +23,13 @@ div {
 .results {
   margin-top: 10px;
 }
+
+.grade1Color {
+  background-color: #00bd80;
+}
+.grade2Color {
+  background-color: #9d4399;
+}
+.grade3Color {
+  background-color: #e46900;
+}
