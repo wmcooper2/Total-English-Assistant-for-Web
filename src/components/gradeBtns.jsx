@@ -10,7 +10,7 @@ const GradeBtn = props => {
   let gradeBorder = "1px solid transparent";
   return (
     <div
-      className="btn"
+      className="btn btn-primary"
       onClick={event => {
         handleClick(event.target.id);
       }}

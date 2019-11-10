@@ -4,11 +4,13 @@ div {
 }
 */
 
+:root {
+  display: flex;
+  justify-content: center;
+}
 .dictionary {
-  position: absolute;
-  width: 500px;
-  left: 350px;
-  top: 50px;
+  margin-top: 50px;
+  width: 600px;
 }
 
 .searchDiv {

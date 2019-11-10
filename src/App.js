@@ -90,7 +90,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="dictionary">
+      <div className="dictionary container">
         <form className="form-group">
           <Search props={this.state} />
           {/*{listResults}*/}
