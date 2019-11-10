@@ -2,8 +2,6 @@ import React from "react";
 
 const Result = props => {
   const { topResults, searchWord } = props.props;
-  console.log("props = ", props);
-
   const grade1 = "rgba(0, 189, 128, 1.0)";
   const grade2 = "rgba(157, 67, 153, 1.0)";
   const grade3 = "rgba(228, 105, 0, 1.0)";
@@ -16,7 +14,7 @@ const Result = props => {
       results.push(
         <li
           key={topResults.indexOf(entry)}
-          className="resultItem list-group-item d-flex justify-content-between align-items-center"
+          className="list-group-item d-flex justify-content-between align-items-center"
         >
           <span>{entry.word}</span>
           <span>{entry.entry.japanese}</span>

@@ -14,15 +14,15 @@ class App extends React.Component {
     this.state = {
       buttons: [
         {
-          grade: 1,
+          grade: "1",
           toggled: false
         },
         {
-          grade: 2,
+          grade: "2",
           toggled: false
         },
         {
-          grade: 3,
+          grade: "3",
           toggled: false
         }
       ],
@@ -89,7 +89,6 @@ class App extends React.Component {
   };
 
   render() {
-    console.log("search Word len in main = ", this.state.searchWord.length);
     return (
       <div className="dictionary">
         <form className="form-group">
