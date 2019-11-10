@@ -29,7 +29,6 @@ class App extends React.Component {
       gradeClick: this.handleGradeClick,
       handleInput: this.handleInput,
       searchWord: "",
-      results: [],
       topResults: []
     };
   }
@@ -86,14 +85,11 @@ class App extends React.Component {
         entry: Dictionary[result.searchResult]
       });
     }
-    if (this.state.searchWord !== "") {
-      this.setState({ topResults: topEntries });
-    } else {
-      this.setState({ topResults: [] });
-    }
+    this.setState((state, props) => ({ topResults: topEntries }));
   };
 
   render() {
+    console.log("search Word len in main = ", this.state.searchWord.length);
     return (
       <div className="dictionary">
         <form className="form-group">

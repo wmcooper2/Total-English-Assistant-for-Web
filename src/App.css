@@ -24,6 +24,12 @@ div {
   margin-top: 10px;
 }
 
+.defaultResult {
+  font-size: 32px;
+  margin-left: 40px;
+  margin-top: 40px;
+}
+
 .grade1Color {
   background-color: #00bd80;
 }

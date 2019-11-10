@@ -18,9 +18,10 @@ const Search = props => {
             </button>
           </div>
           <input
+            autoFocus
             type="text"
             className="form-control"
-            placeholder="English・日本語"
+            placeholder="Enter a word."
             onChange={event => {
               handleInput(event.target.value);
             }}
