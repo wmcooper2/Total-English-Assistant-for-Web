@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import Result from "./components/results";
 import Search from "./components/search";
 import Dictionary from "./totalenglishdictionary.js";
+import Instructions from "./components/instructions";
 import levenshteinDistance from "./borrowed/levenshtein.js";
 
 const ENTRIES = Object.getOwnPropertyNames(Dictionary).sort();
@@ -95,6 +96,7 @@ class App extends React.Component {
           <Search props={this.state} />
           {/*{listResults}*/}
           <Result props={this.state} />
+          <Instructions />
         </form>
       </div>
     );

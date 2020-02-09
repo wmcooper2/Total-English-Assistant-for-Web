@@ -31,3 +31,8 @@ div {
   margin-left: 40px;
   margin-top: 40px;
 }
+
+.instructions {
+  margin-top: 2em;
+  font-family: Tahoma, Arial;
+}
