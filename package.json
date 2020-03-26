@@ -1,8 +1,8 @@
 {
-  "name": "totalenglishassistant",
+  "name": "totalenglishassistant-dictionary",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://52.194.110.101/tea-dictionary",
+  "homepage": "http://teflassistant.com/tea-dictionary",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.25",
     "@fortawesome/free-solid-svg-icons": "^5.11.2",
