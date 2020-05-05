@@ -1,13 +1,8 @@
-/*
-div {
-  border: 1px solid black;
-}
-*/
-
 :root {
   display: flex;
   justify-content: center;
 }
+
 .dictionary {
   margin-top: 50px;
   width: 600px;
